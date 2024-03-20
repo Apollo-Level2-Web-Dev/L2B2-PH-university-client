@@ -16,10 +16,13 @@ dependencies:
     version: 2.0.1(react-redux@9.1.0)(react@18.2.0)
   antd:
     specifier: ^5.13.1
-    version: 5.13.1(react-dom@18.2.0)(react@18.2.0)
+    version: 5.13.1(moment@2.30.1)(react-dom@18.2.0)(react@18.2.0)
   jwt-decode:
     specifier: ^4.0.0
     version: 4.0.0
+  moment:
+    specifier: ^2.30.1
+    version: 2.30.1
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1187,7 +1190,7 @@ packages:
       color-convert: 2.0.1
     dev: true
 
-  /antd@5.13.1(react-dom@18.2.0)(react@18.2.0):
+  /antd@5.13.1(moment@2.30.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-/qAPsr6UyJPSFZQD9G7kW98GelH2Bajli+1q7CRW4IinYQ0R0UVJckFX11emByhiU4Jd4WNH/hOO+fZtp0eVDA==}
     peerDependencies:
       react: '>=16.9.0'
@@ -1221,7 +1224,7 @@ packages:
       rc-motion: 2.9.0(react-dom@18.2.0)(react@18.2.0)
       rc-notification: 5.3.0(react-dom@18.2.0)(react@18.2.0)
       rc-pagination: 4.0.4(react-dom@18.2.0)(react@18.2.0)
-      rc-picker: 3.14.6(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0)
+      rc-picker: 3.14.6(dayjs@1.11.10)(moment@2.30.1)(react-dom@18.2.0)(react@18.2.0)
       rc-progress: 3.5.1(react-dom@18.2.0)(react@18.2.0)
       rc-rate: 2.12.0(react-dom@18.2.0)(react@18.2.0)
       rc-resize-observer: 1.4.0(react-dom@18.2.0)(react@18.2.0)
@@ -1894,6 +1897,10 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
+  /moment@2.30.1:
+    resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
+    dev: false
+
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
@@ -2244,7 +2251,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-picker@3.14.6(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0):
+  /rc-picker@3.14.6(dayjs@1.11.10)(moment@2.30.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-AdKKW0AqMwZsKvIpwUWDUnpuGKZVrbxVTZTNjcO+pViGkjC1EBcjMgxVe8tomOEaIHJL5Gd13vS8Rr3zzxWmag==}
     engines: {node: '>=8.x'}
     peerDependencies:
@@ -2268,6 +2275,7 @@ packages:
       '@rc-component/trigger': 1.18.2(react-dom@18.2.0)(react@18.2.0)
       classnames: 2.5.1
       dayjs: 1.11.10
+      moment: 2.30.1
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
